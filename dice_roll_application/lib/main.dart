@@ -21,4 +21,8 @@ void main() {
 // task 01: 
 /*
 write a function that divides a number with another number and prints the result
+
+variables should use the lowerCamelCase naming convention ---> numberOne 
+functions should also use the lowerCamelCase naming convention ---> addTwoNumbers 
+
 */
