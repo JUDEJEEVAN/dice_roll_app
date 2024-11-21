@@ -1,28 +1,27 @@
 import 'package:flutter/material.dart';
 
-// add two numbers and print
-void addTwoNumbers(double numberOne, double numberTwo) {
-  // int numberOne = 5;
-  // int numberTwo = 10;
-
-  // add two numbers
-  double sum = numberOne + numberTwo;
-
-  // print the sum
-  print(sum);
+void addTwoNumbers({required double number1, required double number2}) {
+  double answer = number1 + number2;
+  print(answer);
 }
 
 void main() {
-  // runApp();
-  addTwoNumbers(7.3, 76.87);
+  addTwoNumbers(number2: 4.5, number1: 6.0);
+  runApp(MaterialApp(
+    home: HelloWorldApp(),
+  ));
 }
 
+class HelloWorldApp extends StatelessWidget {
+  const HelloWorldApp({super.key});
 
-// task 01: 
-/*
-write a function that divides a number with another number and prints the result
-
-variables should use the lowerCamelCase naming convention ---> numberOne 
-functions should also use the lowerCamelCase naming convention ---> addTwoNumbers 
-
-*/
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('This is the App Bar!'),
+        backgroundColor: Colors.blue.shade400,
+      ),
+    );
+  }
+}
